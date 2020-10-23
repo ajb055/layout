@@ -52,6 +52,10 @@ body {
   font-size: .5em;
   margin-top: 15px;
 }
+.header2 div{
+  height: 60px;
+margin-top: 0px;
+}
 #nav-list {
   margin-top: 10px;
 }
@@ -71,21 +75,44 @@ text-align: center;
 #nav-list a span {
   font-size: 1.1em;
 }
-#search{
-color: #000;
+
+#nav-list2 {
+list-style: none;
+color: #ffffff;
+text-align: center;
 }
-#search span{
-  color: #fff;
+
+#nav-list2 a:hover {
+  background: #000000;
 }
-#phone a { /* Phone number */
-  text-align: center;
-  padding-bottom: 0;
+#nav-list2 a span {
+  font-size: 1.1em;
 }
-#phone div { /* We Deliver */
+#nav-list2 {
+  list-style: none;
+  margin-top: 0px;
+}
+#nav-list2 a {
   color: #ffffff;
   text-align: center;
-  padding-right: 15px;
 }
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+ul li a {
+  list-style: none;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #000; }
+
+  li ul { display: none; }
+
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid white;
@@ -107,6 +134,36 @@ section .container{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 
 footer {
