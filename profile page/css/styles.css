@@ -96,6 +96,11 @@ text-align: center;
   color: #ffffff;
   text-align: center;
 }
+#search input{
+  color: #000;
+}
+
+
 li:hover > ul {
   display: block;
   position: absolute;
